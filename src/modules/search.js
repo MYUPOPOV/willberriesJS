@@ -41,9 +41,9 @@ const search = () => {
           то добавляем этот товаар в новый массив */
 				});
 				localStorage.setItem("goods", JSON.stringify(array)); // Кидаем новый массив в localStorage
-				if (window.location.pathname !== "/goods.html") {
+				if (window.location.pathname !== "/willberriesJS/goods.html") {
 					// Если мы не на странице для отображения товара, то переходим на нее
-					window.location.href = "/goods.html";
+					window.location.href = "/willberriesJS/goods.html";
 				} else {
 					renderGoods(array); // Если на ней то рендерим нужные товары на странице
 				}
